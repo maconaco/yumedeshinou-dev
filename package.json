@@ -1,0 +1,31 @@
+{
+  "name": "yumedeshinou-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/styled-components": "^4.4.1",
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "@types/react": "^16.9.17",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.7.4"
+  }
+}
