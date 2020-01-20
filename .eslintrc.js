@@ -1,4 +1,5 @@
-{
+module.exports = {
+    
     "extends": [
         "standard",
         "plugin:import/errors",
