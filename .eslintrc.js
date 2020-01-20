@@ -1,7 +1,7 @@
 module.exports = {
     
     "extends": [
-        "standard",
+        "standardx",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
