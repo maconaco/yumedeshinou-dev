@@ -6,6 +6,8 @@ import LogoImageSvg from '../../../resources/image/logo.svg'
 import LogoTextPcSvg from '../../../resources/image/logo-sub-text-pc.svg'
 import LogoTextSpSvg from '../../../resources/image/logo-sub-text-sp.svg'
 
+type LogoProps = React.ComponentProps<typeof LogoBox>
+
 const LogoBox = styled.div`
     align-items: center;
     display: flex;
@@ -38,7 +40,7 @@ const LogoTextSp = styled((props) => <LogoTextSpSvg {...props} />)`
     `};
 `
 
-const LogoContent = () => (
+const Logo = () => (
     <LogoBox>
         <LogoImage />
         <LogoTextPc />
@@ -46,4 +48,4 @@ const LogoContent = () => (
     </LogoBox>
 )
 
-export default LogoContent
+export default Logo
