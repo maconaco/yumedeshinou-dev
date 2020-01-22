@@ -8,9 +8,6 @@ const IndexPage: NextPage = () => {
     return (
         <Layout title="Home | Next.js + TypeScript Example">
             <p>
-                <Link href="/about">
-                    <a>test</a>
-                </Link>
             </p>
             <CategoryText>Foo</CategoryText>
             <CategoryLink href="/#foo">Bar</CategoryLink>
