@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
-import Footer from '../components/Footer'
+import CategoryLabel, { CategoryLink } from '../components/atmos/CategoryLabel'
 import Link from 'next/link'
 import { NextPage } from 'next';
 
@@ -12,6 +12,8 @@ const IndexPage: NextPage = () => {
                 <a>test</a>
             </Link>
             </p>
+            <CategoryLabel>Foo</CategoryLabel>
+            <CategoryLink href="/#foo">Bar</CategoryLink>
         </Layout>
     )
 }
