@@ -18,7 +18,9 @@ const Nav = styled.nav`
 
     ${media.lessThan('medium')`
         height: 20px;
+        max-width: 100%;
         padding: 0 0 0 12px;
+        overflow: hidden;
     `};
 `
 
@@ -29,6 +31,7 @@ const Ul = styled.ul`
 
     ${media.lessThan('medium')`
         font-size: 14px;
+        width: max-content;
     `};
 `
 

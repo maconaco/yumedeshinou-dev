@@ -11,7 +11,8 @@ const HeaderBox = styled.header`
 `
 
 const Logo = styled(BaseLogo)`
-    height: 168px;
+    height: 128px;
+    justify-content: center;
     margin: 20px 0;
 
     ${media.lessThan("medium")`

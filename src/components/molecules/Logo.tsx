@@ -26,6 +26,7 @@ const LogoImage = styled((props) => <LogoImageSvg {...props} />)`
 `
 const LogoTextPc = styled((props) => <LogoTextPcSvg {...props} />)`
     height: 24px;
+    margin-top: 20px;
     width: 676px;
     ${media.lessThan("medium")`
         display: none;
@@ -36,12 +37,13 @@ const LogoTextSp = styled((props) => <LogoTextSpSvg {...props} />)`
     ${media.lessThan("medium")`
         display: block;
         height: 40px;
+        margin-top: 16px;
         width: 284px;
     `};
 `
 
-const Logo = () => (
-    <LogoBox>
+const Logo: React.FunctionComponent<LogoProps> = (props) => (
+    <LogoBox {...props}>
         <LogoImage />
         <LogoTextPc />
         <LogoTextSp />
