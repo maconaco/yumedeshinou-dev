@@ -6,14 +6,12 @@ module.exports = {
             "ignore": ["stylelint-commands", "after-comment"]
         } ],
         "declaration-colon-space-after": "always",
-        "indentation": ["tab", {
-            "except": ["value"]
-        }],
+        "indentation": 4,
         "max-empty-lines": 2,
         "rule-empty-line-before": [ "always", {
             "except": ["first-nested"],
             "ignore": ["after-comment"]
         } ],
-        "unit-whitelist": ["em", "rem", "%", "s"]
+        "unit-whitelist": ["px", "em", "rem", "%", "s"]
     }
 }

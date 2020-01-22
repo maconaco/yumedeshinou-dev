@@ -7,16 +7,26 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "stylelint": "stylelint src/**/*.tsx"
+    "lint:style": "stylelint src/**/*.tsx || :",
+    "lint:es": "(eslint src/**/*.ts || :) && (eslint src/**/*.tsx || :)",
+    "lint:es:fix": "(eslint src/**/*.ts --fix || :) && (eslint src/**/*.tsx --fix || :)",
+    "prettier": "prettier src/**/*.{ts,tsx} || :",
+    "prettier:fix": "prettier src/**/*.{ts,tsx} --write || :",
+    "lint": "npm run lint:style && npm run lint:es",
+    "lint:fix": "npm run lint:style && npm run lint:es:fix",
+    "lint-and-prettier": "npm run lint && npm run prettier",
+    "lint-and-prettier:fix": "npm run lint:fix && npm run prettier:fix"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "next": "^9.1.6",
+    "next": "^9.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "ress": "^2.0.4",
+    "styled-components": "^4.4.1",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@types/node": "^13.1.2",
@@ -28,6 +38,8 @@
     "babel-plugin-styled-components": "^1.10.6",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "prettier": "^1.19.1",
     "standardx": "^5.0.0",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^8.0.1",
