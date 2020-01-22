@@ -30,7 +30,7 @@ const LogoArea = (props) => (
 
 const MainHeader = () => (
     <HeaderBox>
-        <LogoArea />
+        <Logo />
         <MenuNav>
             <MenuNav.Item>メンタル</MenuNav.Item>
             <MenuNav.Item>音楽</MenuNav.Item>
