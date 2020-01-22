@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Head from 'next/head'
-import styled from 'styled-components'
 import Footer from './Footer'
 import MenuNav from '../components/molecules/MenuNav'
 import Logo from '../components/molecules/Logo'
