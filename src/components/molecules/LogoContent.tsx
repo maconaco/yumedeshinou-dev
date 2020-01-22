@@ -38,7 +38,7 @@ const LogoTextSp = styled((props) => <LogoTextSpSvg {...props} />)`
     `};
 `
 
-const Logo = () => (
+const LogoContent = () => (
     <LogoBox>
         <LogoImage />
         <LogoTextPc />
@@ -46,4 +46,4 @@ const Logo = () => (
     </LogoBox>
 )
 
-export default Logo
+export default LogoContent
