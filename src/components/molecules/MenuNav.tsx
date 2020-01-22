@@ -18,7 +18,6 @@ const Nav = styled.nav`
 
     ${media.lessThan('medium')`
         height: 20px;
-        overflow: hidden;
         padding: 0 0 0 12px;
     `};
 `
