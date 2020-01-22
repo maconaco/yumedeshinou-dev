@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Head from 'next/head'
 import Footer from './Footer'
-import Header from '../components/organisms/Header'
+import MainHeader from '../components/organisms/MainHeader'
 
 type Props = {
     title?: string
@@ -20,7 +20,7 @@ const Layout: React.FunctionComponent<Props> = ({
                 content="initial-scale=1.0, width=device-width"
             />
         </Head>
-        <Header />
+        <MainHeader />
         {children}
         <Footer></Footer>
     </div>

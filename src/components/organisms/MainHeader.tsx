@@ -28,7 +28,7 @@ const Logo = (props) => (
   </LogoBox>
 )
 
-const Header = () => (
+const MainHeader = () => (
     <HeaderBox>
         <LogoArea />
         <MenuNav>
@@ -41,4 +41,4 @@ const Header = () => (
     </HeaderBox>
 )
 
-export default Header
+export default MainHeader
