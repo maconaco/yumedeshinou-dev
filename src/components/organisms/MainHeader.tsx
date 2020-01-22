@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 import LogoContent from '../molecules/LogoContent'
 import MenuNav from '../molecules/MenuNav'
 
-type LogoProps = React.ComponentProps<typeof LogoBox>
+type LogoContent = React.ComponentProps<typeof LogoBox>
 
 const HeaderBox = styled.header`
 
@@ -13,7 +13,7 @@ const HeaderBox = styled.header`
 `
 
 
-const LogoArea = styled(Logo)`
+const Logo = styled(LogoContent)`
     height: 168px;
     margin: 20px 0;
 
@@ -23,7 +23,7 @@ const LogoArea = styled(Logo)`
     `};
 `
 
-const Logo = (props) => (
+const LogoArea = (props) => (
   <LogoBox {...props}>
   </LogoBox>
 )
