@@ -1,18 +1,12 @@
 import * as React from 'react'
 import Head from 'next/head'
-import styled from 'styled-components'
 import Footer from './Footer'
 import MenuNav from '../components/molecules/MenuNav'
+import Logo from '../components/molecules/Logo'
 
 type Props = {
     title?: string
 }
-
-const Test = styled.h1`
-    font-size: 28px;
-    text-align: center;
-    color: #9f5cc1;
-`
 
 const Layout: React.FunctionComponent<Props> = ({
     children,
@@ -28,6 +22,7 @@ const Layout: React.FunctionComponent<Props> = ({
             />
         </Head>
         <header>
+            <Logo />
             <MenuNav>
                 <MenuNav.Item>メンヘラ</MenuNav.Item>
                 <MenuNav.Item>音楽</MenuNav.Item>
@@ -36,7 +31,6 @@ const Layout: React.FunctionComponent<Props> = ({
                 <MenuNav.Item>メンヘラ</MenuNav.Item>
             </MenuNav>
         </header>
-        <Test>yumedeshinou</Test>
         {children}
         <Footer></Footer>
     </div>

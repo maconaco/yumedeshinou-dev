@@ -34,7 +34,7 @@ const Ul = styled.ul`
 `
 
 const Li: React.FunctionComponent = styled(props => (
-    <CategoryLabel as="li" {...props} />
+    <CategoryText as="li" {...props} />
 ))`
     list-style: none;
 `
