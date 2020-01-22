@@ -1,16 +1,16 @@
 module.exports = {
     
     "extends": [
-        "standardx",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
+        "plugin:react/recommended",
         "prettier/@typescript-eslint",
-        "prettier/react"
-        "plugin:@typescript-eslint/eslint-plugin",
+        "prettier/react",
     ],
+    "plugins": ["@typescript-eslint", "prettier"],
     "env": {
         "browser": true,
         "es6": true,
@@ -18,6 +18,7 @@ module.exports = {
     },
     "rules": {
         "react/prop-types": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     },
     "overrides": [
         {
