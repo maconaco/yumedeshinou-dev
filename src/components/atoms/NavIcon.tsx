@@ -27,8 +27,7 @@ const NavImage = styled((props) => <NavIconSvg {...props} />)`
 `
 
 const NavIconLink: React.FunctionComponent<NavLinkProps> = ({
-    props,
-    href,
+    href,...props
 }) => (
     <Link href={href} passHref>
         <NavIcon {...props}>
