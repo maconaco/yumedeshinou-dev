@@ -1,38 +1,34 @@
 import * as React from 'react'
-import Link, { LinkProps as RouterLinkProps } from 'next/link'
 import styled from 'styled-components'
-import media from 'styled-media-query'
-import NavIconSvg from '../../../resources/image/nav-icon/drug.svg'
 
-type NavProps = React.ComponentProps<typeof NavIcon>
+import Attention from '../../../resources/image/nav-icon/drug.svg'
+import Drug from '../../../resources/image/nav-icon/drug.svg'
+import Fashion from '../../../resources/image/nav-icon/fashion.svg'
+import Music from '../../../resources/image/nav-icon/music.svg'
+import Programming from '../../../resources/image/nav-icon/programming.svg'
 
-type NavLinkProps = NavProps & RouterLinkProps
+export type IconType = keyof typeof icons
+type Props = {
+    className?: string
+    type: IconType
+}
 
-const NavIcon = styled.span`
-    display: none;
+const icons = {
+    Attention,
+    Drug,
+    Fashion,
+    Music,
+    Programming,
+}
 
-    ${media.lessThan('medium')`
-        display: block;
-    `};
+const Icon: React.FunctionComponent<Props> = ({ type, ...props }) => {
+    const Icon: any = icons[type]
+    return <Icon {...props} />
+}
+
+const NavIcon = styled(Icon)`
+    height: 28px;
+    width: 28px;
 `
 
-const NavImage = styled((props) => <NavIconSvg {...props} />)`
-    display: none;
-
-    ${media.lessThan("medium")`
-        height: auto;
-        width: 8.75vw;
-    `};
-
-`
-
-const NavIconLink: React.FunctionComponent<NavLinkProps> = ({
-    href,...props
-}) => (
-    <Link href={href} passHref>
-        <NavIcon {...props}>
-            <NavImage />
-        </NavIcon>
-    </Link>
-)
 export default NavIcon
