@@ -19,8 +19,8 @@ const LogoImage = styled((props) => <LogoImageSvg {...props} />)`
     width: 368px;
 
     ${media.lessThan("medium")`
-        height: 36px;
-        width: 296px;
+        height: 6.25vh;
+        width: 92.5vw;
     `};
 
 `
@@ -36,9 +36,9 @@ const LogoTextSp = styled((props) => <LogoTextSpSvg {...props} />)`
     display: none;
     ${media.lessThan("medium")`
         display: block;
-        height: 40px;
-        margin-top: 16px;
-        width: 284px;
+        height: 6.5vh;
+        margin: 12px 0;
+        width: 88.75vw;
     `};
 `
 
