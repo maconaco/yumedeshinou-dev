@@ -1,7 +1,7 @@
 import * as React from 'react'
-import Link from 'next/link'
 import styled from 'styled-components'
 import media from 'styled-media-query'
+
 import LogoImageSvg from '../../../resources/image/logo.svg'
 import LogoTextPcSvg from '../../../resources/image/logo-sub-text-pc.svg'
 import LogoTextSpSvg from '../../../resources/image/logo-sub-text-sp.svg'
@@ -12,9 +12,8 @@ const LogoBox = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-`;
-
-const LogoImage = styled((props) => <LogoImageSvg {...props} />)`
+`
+const LogoImage = styled(LogoImageSvg as any)`
     height: 46px;
     width: 368px;
 
@@ -24,7 +23,7 @@ const LogoImage = styled((props) => <LogoImageSvg {...props} />)`
     `};
 
 `
-const LogoTextPc = styled((props) => <LogoTextPcSvg {...props} />)`
+const LogoTextPc = styled(LogoTextPcSvg as any)`
     height: 24px;
     margin-top: 20px;
     width: 676px;
@@ -32,7 +31,7 @@ const LogoTextPc = styled((props) => <LogoTextPcSvg {...props} />)`
         display: none;
     `};
 `
-const LogoTextSp = styled((props) => <LogoTextSpSvg {...props} />)`
+const LogoTextSp = styled(LogoTextSpSvg as any)`
     display: none;
     ${media.lessThan("medium")`
         display: block;
