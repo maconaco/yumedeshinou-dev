@@ -26,9 +26,9 @@ const Icon: React.FunctionComponent<Props> = ({ type, ...props }) => {
     return <Icon {...props} />
 }
 
-const NavIcon = styled(Icon)`
+const CategeoryIcon = styled(Icon)`
     height: 28px;
     width: 28px;
 `
 
-export default NavIcon
+export default CategeoryIcon

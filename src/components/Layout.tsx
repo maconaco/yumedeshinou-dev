@@ -2,16 +2,21 @@ import * as React from 'react'
 import Head from 'next/head'
 import Footer from './Footer'
 import MainHeader from '../components/organisms/MainHeader'
+import styled from 'styled-components'
 
 type Props = {
     title?: string
 }
 
+const Container = styled.div`
+    width: 100%;
+`
+
 const Layout: React.FunctionComponent<Props> = ({
     children,
     title = 'This is the default title',
 }) => (
-    <div>
+    <Container>
         <Head>
             <title>{title}</title>
             <meta charSet="utf-8" />
@@ -23,7 +28,7 @@ const Layout: React.FunctionComponent<Props> = ({
         <MainHeader />
         {children}
         <Footer></Footer>
-    </div>
+    </Container>
 )
 
 export default Layout

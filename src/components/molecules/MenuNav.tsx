@@ -3,7 +3,7 @@ import Link, { LinkProps } from 'next/link'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 import BaseCategoryText from '../atoms/CategoryText'
-import BaseNavIcon, { IconType } from '../atoms/NavIcon'
+import BaseNavIcon, { IconType } from '../atoms/CategoryIcon'
 
 type NavProps = {
     children: JSX.Element | JSX.Element[]
@@ -18,28 +18,39 @@ type MenuNav = React.FunctionComponent<NavProps> & {
 
 const Nav = styled.nav`
     background-color: #b5dfe8;
-    padding: 0 120px;
 `
 const Ul = styled.ul`
     display: flex;
     justify-content: center;
+    margin: auto;
+
+    ${media.lessThan("medium")`
+        justify-content: space-between;
+        width: 81.25vw;
+    `};
+
+    ${media.greaterThan("medium")`
+        width: 68.5vw;
+    `};
 `
 const Li = styled.li`
     flex-shrink: 0;
     list-style: none;
-    padding: 0 24px;
+    padding: 12px 24px;
 
     ${media.lessThan("medium")`
-        padding: 8px 24px;
+        padding: .4em .8em;
     `};
 `
 const CategoryText = styled(BaseCategoryText)`
+
     ${media.lessThan("medium")`
         display: none;
     `};
 `
-const NavIcon = styled(BaseNavIcon)`
+const CategoryIcon = styled(BaseNavIcon)`
     display: none;
+
     ${media.lessThan("medium")`
         display: block;
     `};
@@ -49,7 +60,7 @@ const Item: React.FunctionComponent<ItemProps> = ({ href, icon, children, ...pro
     <Link href={href} passHref>
         <Li {...props}>
             <CategoryText>{children}</CategoryText>
-            <NavIcon type={icon} />
+            <CategoryIcon type={icon} />
         </Li>
     </Link>
 )
