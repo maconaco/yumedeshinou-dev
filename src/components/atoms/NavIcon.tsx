@@ -9,7 +9,7 @@ import Programming from '../../../resources/image/nav-icon/programming.svg'
 
 export type IconType = keyof typeof icons
 type Props = {
-    className?: string|undefined
+    className?: string
     type: IconType
 }
 
