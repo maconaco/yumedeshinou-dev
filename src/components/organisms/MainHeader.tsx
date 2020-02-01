@@ -28,7 +28,7 @@ const MainHeader = () => (
             <MenuNav.Item icon="Drug" href="#mental">メンタル</MenuNav.Item>
             <MenuNav.Item icon="Music" href="#music">音楽</MenuNav.Item>
             <MenuNav.Item icon="Programming" href="#programming">プログラミング</MenuNav.Item>
-            <MenuNav.Item icon="Drug" href="#attention">読みにくい記事</MenuNav.Item>
+            <MenuNav.Item icon="Attention" href="#attention">読みにくい記事</MenuNav.Item>
             <MenuNav.Item icon="Fashion" href="#fashion">ファッション</MenuNav.Item>
         </MenuNav>
     </HeaderBox>

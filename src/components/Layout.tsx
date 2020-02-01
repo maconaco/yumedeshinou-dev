@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Head from 'next/head'
-import Footer from './Footer'
 import MainHeader from '../components/organisms/MainHeader'
 import styled from 'styled-components'
 
@@ -26,8 +25,6 @@ const Layout: React.FunctionComponent<Props> = ({
             />
         </Head>
         <MainHeader />
-        {children}
-        <Footer></Footer>
     </Container>
 )
 

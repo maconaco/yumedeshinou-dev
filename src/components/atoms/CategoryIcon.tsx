@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import Attention from '../../../resources/image/nav-icon/drug.svg'
+import Attention from '../../../resources/image/nav-icon/attention.svg'
 import Drug from '../../../resources/image/nav-icon/drug.svg'
 import Fashion from '../../../resources/image/nav-icon/fashion.svg'
 import Music from '../../../resources/image/nav-icon/music.svg'
