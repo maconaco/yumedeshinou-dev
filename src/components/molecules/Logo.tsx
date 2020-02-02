@@ -2,9 +2,9 @@ import * as React from 'react'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import LogoImageSvg from '../../../resources/image/logo.svg'
-import LogoTextPcSvg from '../../../resources/image/logo-sub-text-pc.svg'
-import LogoTextSpSvg from '../../../resources/image/logo-sub-text-sp.svg'
+import LogoImageSvg from '../../../resources/image/svg/logo/logo.svg'
+import LogoTextPcSvg from '../../../resources/image/svg/logo/logo-sub-text-pc.svg'
+import LogoTextSpSvg from '../../../resources/image/svg/logo/logo-sub-text-sp.svg'
 
 type LogoProps = React.ComponentProps<typeof LogoBox>
 
