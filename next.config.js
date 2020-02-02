@@ -1,16 +1,24 @@
 const path = require('path')
+const withPlugins = require('next-compose-plugins');
 const withReactSvg = require('next-react-svg')
-module.exports = withReactSvg({
-  include: path.resolve(__dirname, 'resources/image/svg'),
-  webpack(config, options) {
-    return config
-  }
-})
-
 const withImages = require('next-images')
-module.exports = withImages({
-  exclude: path.resolve(__dirname, 'resources/image/svg'),
-  webpack(config, options) {
-    return config
-  }
-})
+
+// next.js configuration
+const nextConfig = {
+  useFileSystemPublicRoutes: false,
+  distDir: 'build',
+  webpack: (config, options) => {
+    return config;
+  },
+};
+
+module.exports = withPlugins([
+  [withReactSvg, {
+    include: path.resolve(__dirname, 'resources/image/svg'),
+  }],
+
+  [withImages, {
+    exclude: path.resolve(__dirname, 'resources/image/svg'),
+  }],
+  
+], nextConfig);

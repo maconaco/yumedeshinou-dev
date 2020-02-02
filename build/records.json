@@ -1,0 +1,55 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!node_modules/postcss-loader/src/index.js??__nextjs_postcss!node_modules/ress/dist/ress.min.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "framework": 2,
+      "1df93a5f3becf88dbe3c96b35b261451275e1b75": 3,
+      "a22ff84c300d892f43966357e0791676f09c9f5f": 4,
+      "static/RPB9oddUQkA_Ac0F6pHoU/pages/_app.js": 5,
+      "static/RPB9oddUQkA_Ac0F6pHoU/pages/_error.js": 6,
+      "static/RPB9oddUQkA_Ac0F6pHoU/pages/index.js": 7,
+      "static/runtime/main.js": 8,
+      "static/runtime/polyfills.js": 9,
+      "7d5e264f8941fdbd9334287931f918eba4d0fe6b": 10,
+      "e0e6900742fb82638ac2eb3424564ed07d2c973f": 11,
+      "static/nafZ0Y5AmCSjF3sO-B9-n/pages/_app.js": 12,
+      "static/nafZ0Y5AmCSjF3sO-B9-n/pages/_error.js": 13,
+      "static/nafZ0Y5AmCSjF3sO-B9-n/pages/index.js": 14
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      2,
+      8,
+      9
+    ]
+  }
+}
