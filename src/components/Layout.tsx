@@ -2,7 +2,7 @@ import * as React from 'react'
 import Head from 'next/head'
 import MainHeader from '../components/organisms/MainHeader'
 import styled from 'styled-components'
-import BlogImage from '../../resources/image/blog-image'
+import BlogImage from '../../resources/image/blog-image.jpg'
 
 type Props = {
     title?: string

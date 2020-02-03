@@ -5,19 +5,36 @@ const withImages = require('next-images')
 
 // next.js configuration
 const nextConfig = {
-  webpack: (config, options) => {
-    return config;
-  },
-};
+    webpack: (config, options) => {
+        config.module.rules.push({
+            test: /\.(png|jpeg|gif)$/i,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    },
+                },
+            ],
+        })
+        return config
+    },
+}
 
 module.exports = withPlugins([
-  [withReactSvg, {
-    include: path.resolve(__dirname, 'resources/image/svg'),
-  }],
+        [
+            withReactSvg,
+            {
+                include: path.resolve(__dirname, 'resources/image/svg'),
+            },
+        ],
 
-  [withImages, {
-    exclude: path.resolve(__dirname, 'resources/image/svg'),
-
-  }],
-  
-], nextConfig);
+        [
+            withImages,
+            {
+                exclude: path.resolve(__dirname, 'resources/image/svg'),
+            },
+        ],
+    ],
+    nextConfig
+)

@@ -5,8 +5,7 @@ import BaseLogo from '../molecules/Logo'
 import MenuNav from '../molecules/MenuNav'
 
 const HeaderBox = styled.header`
-
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
     `};
 `
 
@@ -15,7 +14,7 @@ const Logo = styled(BaseLogo)`
     justify-content: center;
     margin: 20px 0;
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
         height: 116px;
         margin: 12px 0;
     `};
