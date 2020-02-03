@@ -22,6 +22,7 @@ module.exports = {
             "Hyperlink",
             {"name": "Link", "linkAttribute": "to"}
         ],
+        "import/resolver": webpack
     },
     
     "extends": [
@@ -34,7 +35,7 @@ module.exports = {
         "prettier/@typescript-eslint",
         "prettier/react",
     ],
-    "plugins": ["@typescript-eslint", "prettier"],
+    "plugins": ["@typescript-eslint", "prettier","import"],
     "env": {
         "browser": true,
         "es6": true,
@@ -42,7 +43,7 @@ module.exports = {
     },
     "rules": {
         "react/prop-types": "off",
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/no-explicit-any": "off",
     },
     "overrides": [
         {
