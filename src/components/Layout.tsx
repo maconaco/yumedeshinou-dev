@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
-import Footer from './Footer'
 import MainHeader from '../components/organisms/MainHeader'
 import styled from 'styled-components'
+import BlogImage from '../../resources/image/blog-image.jpg'
 
 type Props = {
     title?: string
@@ -13,7 +13,6 @@ const Container = styled.div`
 `
 
 const Layout: React.FunctionComponent<Props> = ({
-    children,
     title = 'This is the default title',
 }) => (
     <Container>
@@ -26,8 +25,7 @@ const Layout: React.FunctionComponent<Props> = ({
             />
         </Head>
         <MainHeader />
-        {children}
-        <Footer></Footer>
+        <img src={BlogImage} />
     </Container>
 )
 
