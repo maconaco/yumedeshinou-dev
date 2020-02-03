@@ -1,4 +1,6 @@
 module.exports = {
+    "plugins": ["stylelint-prettier"],
+
     "rules": {
         "block-no-empty": null,
         "color-no-invalid-hex": true,
@@ -12,6 +14,7 @@ module.exports = {
             "except": ["first-nested"],
             "ignore": ["after-comment"]
         } ],
+        "prettier/prettier": true,
         "unit-whitelist": ["px", "em", "rem", "%", "s"]
     }
 }
