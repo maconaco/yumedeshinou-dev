@@ -5,8 +5,6 @@ const withImages = require('next-images')
 
 // next.js configuration
 const nextConfig = {
-  useFileSystemPublicRoutes: false,
-  distDir: 'build',
   webpack: (config, options) => {
     return config;
   },
@@ -19,6 +17,7 @@ module.exports = withPlugins([
 
   [withImages, {
     exclude: path.resolve(__dirname, 'resources/image/svg'),
+
   }],
   
 ], nextConfig);

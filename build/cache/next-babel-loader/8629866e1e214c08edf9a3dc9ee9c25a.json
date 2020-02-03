@@ -1,1 +1,0 @@
-{"ast":null,"code":"import styled from 'styled-components';\nvar CategoryText = styled.span.withConfig({\n  displayName: \"CategoryText\",\n  componentId: \"sc-1p5a7ds-0\"\n})([\"font-size:2.4rem;color:#fff;\"]);\nexport default CategoryText;","map":null,"metadata":{},"sourceType":"module"}
