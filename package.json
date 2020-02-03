@@ -14,8 +14,11 @@
     "prettier:fix": "prettier src/**/*.{ts,tsx} --write || :",
     "lint": "npm run lint:style && npm run lint:es",
     "lint:fix": "npm run lint:style && npm run lint:es:fix",
-    "lint-and-prettier": "npm run lint && npm run prettier",
-    "lint-and-prettier:fix": "npm run lint:fix && npm run prettier:fix"
+    "stylelint:style": "stylelint **/*{.jsx,.tsx,.css} || :",
+    "stylelint": "npm run stylelint:style",
+    "stylelint:fix": "(stylelint **/*{.jsx,.tsx,.css} --fix || :)",
+    "lint-and-prettier-and-stylelint": "npm run lint && npm run prettier && npm run stylelint",
+    "lint-and-prettier-and-stylelint:fix": "npm run lint:fix && npm run prettier:fix && npm run stylelint:fix"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +42,7 @@
     "@typescript-eslint/parser": "^2.18.0",
     "@zeit/next-typescript": "^1.1.1",
     "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-import-resolver-webpack": "^0.12.1",
@@ -47,7 +51,6 @@
     "eslint-plugin-react": "^7.18.0",
     "file-loader": "^5.0.2",
     "prettier": "^1.19.1",
-    "standardx": "^5.0.0",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-styled-components": "^0.1.1",
@@ -60,11 +63,5 @@
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "error"
     }
-  },
-  "standardx": {
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint/eslint-plugin"
-    ]
   }
 }
