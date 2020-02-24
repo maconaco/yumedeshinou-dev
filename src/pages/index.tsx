@@ -14,7 +14,7 @@ const IndexPage: NextPage = () => {
 
 fetch('https://yumedeshinou.microcms.io/api/v1/blog', {
     headers: {
-        'X-API-KEY': process.env.blog_api_key as string,
+        'X-API-KEY': process.env.BLOG_API_KEY as string,
     },
 })
     .then(res => res.json())
