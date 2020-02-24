@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/Layout'
 import CategoryText from '../components/atoms/CategoryText'
 import { NextPage } from 'next'
+import fetch from 'unfetch'
 
 const IndexPage: NextPage = () => {
     return (
@@ -11,13 +12,12 @@ const IndexPage: NextPage = () => {
     )
 }
 
-/// const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-/// <h1>Hello world! - user agent: {userAgent}</h1>
-/// );
-
-/// Home.getInitialProps = async ({ req }) => {
-/// const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-/// return { userAgent };
-/// };
+fetch('https://yumedeshinou.microcms.io/api/v1/blog', {
+    headers: {
+        'X-API-KEY': process.env.blog_api_key as string,
+    },
+})
+    .then(res => res.json())
+    .then(res => console.log(res))
 
 export default IndexPage
