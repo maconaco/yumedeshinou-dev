@@ -3,6 +3,14 @@ const withPlugins = require('next-compose-plugins')
 const withReactSvg = require('next-react-svg')
 const withImages = require('next-images')
 
+require('dotenv').config()
+
+module.exports = {
+    env: {
+        blog_api_key: process.env.BLOG_API_KEY,
+    },
+}
+
 // next.js configuration
 const nextConfig = {
     webpack: (config, options) => {
