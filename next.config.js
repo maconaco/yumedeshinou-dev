@@ -1,7 +1,14 @@
 const path = require('path')
-const withPlugins = require('next-compose-plugins');
+const withPlugins = require('next-compose-plugins')
 const withReactSvg = require('next-react-svg')
 const withImages = require('next-images')
+const Dotenv = require('dotenv-webpack')
+
+module.exports = {
+    env: {
+        blog_api_key: process.env.BLOG_API_KEY,
+    },
+}
 
 // next.js configuration
 const nextConfig = {
@@ -17,11 +24,20 @@ const nextConfig = {
                 },
             ],
         })
+        config.plugins = [
+            ...config.plugins,
+
+            new Dotenv({
+                path: path.join(__dirname, '.env'),
+                systemvars: true,
+            }),
+        ]
         return config
     },
 }
 
-module.exports = withPlugins([
+module.exports = withPlugins(
+    [
         [
             withReactSvg,
             {
