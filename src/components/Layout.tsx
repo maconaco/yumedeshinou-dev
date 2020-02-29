@@ -1,8 +1,10 @@
 import * as React from 'react'
 import Head from 'next/head'
 import MainHeader from '../components/organisms/MainHeader'
+import CardImage from '../components/atoms/CardImage'
+import CardTittle from '../components/atoms/CardTittle'
+import CardText from '../components/atoms/CardText'
 import styled from 'styled-components'
-import BlogImage from '../../resources/image/blog-image.jpg'
 
 type Props = {
     title?: string
@@ -25,7 +27,9 @@ const Layout: React.FunctionComponent<Props> = ({
             />
         </Head>
         <MainHeader />
-        <img src={BlogImage} />
+        <CardImage />
+        <CardTittle>タイトルタイトルタイトル</CardTittle>
+        <CardText>テキストテキストテキスト</CardText>
     </Container>
 )
 
