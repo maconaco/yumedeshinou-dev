@@ -25,14 +25,14 @@ module.exports = withPlugins([
         [
             withReactSvg,
             {
-                include: path.resolve(__dirname, 'resources/image/svg'),
+                include: path.resolve(__dirname, 'public/image/svg'),
             },
         ],
 
         [
             withImages,
             {
-                exclude: path.resolve(__dirname, 'resources/image/svg'),
+                exclude: path.resolve(__dirname, 'public/image/svg'),
             },
         ],
     ],
