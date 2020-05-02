@@ -9,6 +9,12 @@ module.exports = {
         } ],
         "declaration-colon-space-after": "always",
         "indentation": 4,
+        "at-rule-no-unknown": [ true, {
+            "ignoreAtRules": [
+                "extends",
+                "tailwind"
+            ]
+        }],
         "max-empty-lines": 2,
         "rule-empty-line-before": [ "always", {
             "except": ["first-nested"],

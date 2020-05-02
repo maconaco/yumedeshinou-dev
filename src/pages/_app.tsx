@@ -1,6 +1,7 @@
 import 'ress'
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
+import './styles.css'
 
 const GlobalStyle = createGlobalStyle`
     * {

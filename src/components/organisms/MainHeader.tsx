@@ -3,8 +3,10 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import BaseLogo from '../molecules/Logo'
 import MenuNav from '../molecules/MenuNav'
+import tw from 'tailwind.macro'
 
-const HeaderBox = styled.header`
+const HeaderBox = styled('div')`
+    ${tw`bg-black`};
     ${media.lessThan('medium')`
     `};
 `
